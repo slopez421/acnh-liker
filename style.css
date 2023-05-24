@@ -1,0 +1,37 @@
+#backgroundStrip {
+    background-color: #5d93ba;
+    height: 1000px;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+#bodyColor {
+   background-color: #53747f; 
+   position: relative;
+   top: 100px;
+   width: 800px;
+   height: 700px;
+   margin: 0 auto;
+}
+
+#nav {
+    position: absolute;
+    background-color: #9ebfd8;
+    height: 90%;
+    width: 200px;
+    top: 30px;
+    left: -40px;
+}
+
+#villagersContainer
+{
+    background-color: aliceblue;
+    width: 620px;
+    height: 90%;
+    position: absolute;
+    top: 30px;
+    left: 170px;
+}
