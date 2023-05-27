@@ -24,7 +24,6 @@
     width: 200px;
     top: 30px;
     left: -40px;
-    border: white solid 1px;
 }
 
 #villagersContainer
@@ -45,6 +44,12 @@
     width: 12rem;
     height: 15rem;
     display: inline-grid;
-    margin: 1rem 2rem;
+    margin: 2rem 2rem;
     box-shadow: 3px 4px rgba(252, 216, 12, 0.938);
+}
+
+.villager-picture {
+    justify-self: center;
+    height: 9rem;
+    width: auto;
 }
