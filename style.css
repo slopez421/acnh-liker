@@ -28,6 +28,7 @@
     
 }
 
+
 #villagersContainer
 {
     background-color: aliceblue;
@@ -71,4 +72,8 @@
 
 .hidden {
     display: none;
+}
+
+.button {
+    position: relative;
 }
