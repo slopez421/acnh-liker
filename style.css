@@ -70,10 +70,6 @@
     width: auto;
 }
 
-.hidden {
-    display: none;
-}
-
-.button {
-    position: relative;
+.activated-heart {
+    color: red;
 }

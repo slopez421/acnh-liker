@@ -2,11 +2,6 @@
 const form = document.querySelector('form')
 const villagerContainer = document.getElementById('villagersContainer')
 const villagerContainerSearch = document.getElementById('villagersContainerSearch')
-const emptyHeart= &#9825;
-const fullHeart = &#9829;
-
-
-
 
 
 //fetch all villagers
@@ -33,13 +28,17 @@ function renderOneVillager(villager, container){
     Personality: ${villager.personality}<br>
     Birthday: ${villager['birthday-string']}<br>
     Catchphrase: "${villager['catch-phrase']}"</p>
-    <div class="button"><button>&#9825</button</div>
+    <div class="button"><button>&#9825;</button></div>
     `
+    const button = card.querySelector('button')
+    button.addEventListener('click', (e) => {
+        button.innerHTML = `&#x2764;`
+        button.classList.add('activated-heart')
+    })
+
     //add villager card to DOM
     container.appendChild(card)
 }
-
-
 
 
 // come back to this and figure out how to search through the
