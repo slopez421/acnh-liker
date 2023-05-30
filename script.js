@@ -3,6 +3,7 @@ const form = document.querySelector('form')
 const villagerContainer = document.getElementById('villagersContainer')
 const villagerContainerSearch = document.getElementById('villagersContainerSearch')
 const team = document.getElementById('dreamTeam')
+const likesContainer = document.getElementById('villagersContainerLikes')
 
 //fetch all villagers
 function getAllVillagers(){
@@ -34,6 +35,7 @@ function renderOneVillager(villager, container){
     button.addEventListener('click', (e) => {
         button.innerHTML = `&#x2764;`
         button.classList.add('activated-heart')
+        likesContainer.append(card)
     })
 
     //add villager card to DOM
@@ -69,6 +71,7 @@ function handleSubmit(e){
                //console.log(stats)
                 if(search === villagerName){
                     villagerContainer.style.display = "none";
+                    likesContainer.style.display = "none";
                     villagerContainerSearch.style.display = "block";
                     
                     renderOneVillager(allVillagerStats, villagerContainerSearch)
@@ -83,4 +86,8 @@ team.addEventListener('click', handleClick)
 
 function handleClick(e) {
 console.log(e.target)
+villagerContainer.style.display = "none";
+villagerContainerSearch.style.display = "none";
+likesContainer.style.display = "block";
+
 }

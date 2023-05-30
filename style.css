@@ -34,7 +34,6 @@
 #dreamTeam {
     margin-top: 30px;
     background-color: #c8e0f1;
-
 }
 
 
@@ -53,6 +52,19 @@
 }
 
 #villagersContainerSearch
+{
+    background-color: aliceblue;
+    width: 620px;
+    height: 90%;
+    position: absolute;
+    top: 30px;
+    left: 170px;
+    display: none;
+    overflow: auto;
+}
+
+#villagersContainerLikes
+
 {
     background-color: aliceblue;
     width: 620px;
@@ -87,4 +99,5 @@
 
 #form {
     margin-top: 30%;
+    
 }
