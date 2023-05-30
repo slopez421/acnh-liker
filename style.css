@@ -97,7 +97,11 @@
     color: red;
 }
 
+#home {
+    background-color: #c8e0f1;
+    margin-top: 20%;
+}
+
 #form {
-    margin-top: 30%;
-    
+    margin-top: 10%;
 }

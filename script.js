@@ -4,6 +4,7 @@ const villagerContainer = document.getElementById('villagersContainer')
 const villagerContainerSearch = document.getElementById('villagersContainerSearch')
 const team = document.getElementById('dreamTeam')
 const likesContainer = document.getElementById('villagersContainerLikes')
+const home = document.getElementById('home')
 
 //fetch all villagers
 function getAllVillagers(){
@@ -95,3 +96,8 @@ villagerContainerSearch.style.display = "none";
 likesContainer.style.display = "block";
 }
 
+home.addEventListener('click', () => {
+    villagerContainer.style.display = "block";
+    villagerContainerSearch.style.display = "none";
+    likesContainer.style.display = "none";
+})
