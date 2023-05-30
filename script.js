@@ -2,7 +2,7 @@
 const form = document.querySelector('form')
 const villagerContainer = document.getElementById('villagersContainer')
 const villagerContainerSearch = document.getElementById('villagersContainerSearch')
-
+const team = document.getElementById('dreamTeam')
 
 //fetch all villagers
 function getAllVillagers(){
@@ -77,4 +77,10 @@ function handleSubmit(e){
             }
         }
     })
+}
+
+team.addEventListener('click', handleClick)
+
+function handleClick(e) {
+console.log(e.target)
 }
