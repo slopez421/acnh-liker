@@ -25,6 +25,7 @@
     width: 200px;
     top: 30px;
     left: -40px;
+    font-family: 'Lucida Sans', 
     
 }
 
@@ -39,6 +40,8 @@
     left: 170px;
     display: block;
     overflow: auto;
+    font-family: 'Lucida Sans';
+    font-size: small;
 }
 
 #villagersContainerSearch
