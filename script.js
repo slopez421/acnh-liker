@@ -32,14 +32,17 @@ function renderOneVillager(villager, container){
     <div class="button"><button>&#9825;</button></div>
     `
     const button = card.querySelector('button')
-    button.addEventListener('click', (e) => {
+    button.addEventListener('click', () => {
         button.innerHTML = `&#x2764;`
         button.classList.add('activated-heart')
-        likesContainer.append(card)
+        let villagerClone = card.cloneNode(true)
+        likesContainer.appendChild(villagerClone)
+
     })
 
     //add villager card to DOM
     container.appendChild(card)
+    
 }
 
 
@@ -85,9 +88,10 @@ function handleSubmit(e){
 team.addEventListener('click', handleClick)
 
 function handleClick(e) {
+
 console.log(e.target)
 villagerContainer.style.display = "none";
 villagerContainerSearch.style.display = "none";
 likesContainer.style.display = "block";
-
 }
+
