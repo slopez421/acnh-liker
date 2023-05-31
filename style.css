@@ -61,6 +61,8 @@
     left: 170px;
     display: none;
     overflow: auto;
+    font-family: 'Lucida Sans';
+    font-size: small;
 }
 
 #villagersContainerLikes
@@ -74,6 +76,8 @@
     left: 170px;
     display: none;
     overflow: auto;
+    font-family: 'Lucida Sans';
+    font-size: small;
 }
 
 .card {

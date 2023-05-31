@@ -30,7 +30,7 @@ function renderOneVillager(villager, container){
     Personality: ${villager.personality}<br>
     Birthday: ${villager['birthday-string']}<br>
     Catchphrase: "${villager['catch-phrase']}"</p>
-    <div class="button"><button>&#x2764;</button></div>
+    <div><button>&#x2764;</button></div>
     `
     const button = card.querySelector('button')
     button.addEventListener('click', (e) => {
