@@ -30,12 +30,12 @@ function renderOneVillager(villager, container){
     Personality: ${villager.personality}<br>
     Birthday: ${villager['birthday-string']}<br>
     Catchphrase: "${villager['catch-phrase']}"</p>
-    <div class="button"><button>&#9825;</button></div>
+    <div class="button"><button>&#x2764;</button></div>
     `
     const button = card.querySelector('button')
-    button.addEventListener('click', () => {
-        button.innerHTML = `&#x2764;`
-        button.classList.add('activated-heart')
+    button.addEventListener('click', (e) => {
+        const heart = e.target
+        heart.classList.toggle('activated-heart')
         let villagerClone = card.cloneNode(true)
         likesContainer.appendChild(villagerClone)
 
