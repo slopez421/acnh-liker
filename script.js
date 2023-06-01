@@ -1,4 +1,6 @@
 //all global consts
+
+const bodyColor = document.getElementById('bodyColor')
 const form = document.querySelector('form')
 const villagerContainer = document.getElementById('villagersContainer')
 const villagerContainerSearch = document.getElementById('villagersContainerSearch')
@@ -49,7 +51,7 @@ function renderOneVillager(villager, container){
 
 //event listeners
 
-// submit event uses a for loop to searc through each villager
+// submit event uses a for loop to search through each villager
 //until the villager name matches the target search value
 form.addEventListener('submit', handleSubmit)
 
@@ -89,9 +91,9 @@ function handleSubmit(e){
 }
 
 team.addEventListener('click', () => {
-villagerContainer.style.display = "none";
-villagerContainerSearch.style.display = "none";
-likesContainer.style.display = "block";
+    villagerContainer.style.display = "none";
+    villagerContainerSearch.style.display = "none";
+    likesContainer.style.display = "block";
 })
 
 home.addEventListener('click', () => {
@@ -99,3 +101,8 @@ home.addEventListener('click', () => {
     villagerContainerSearch.style.display = "none";
     likesContainer.style.display = "none";
 })
+
+let logo = document.createElement('div')
+logo.innerHTML= `
+<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Animal_Crossing_Leaf.svg/512px-Animal_Crossing_Leaf.svg.png?20220815231826" />`
+bodyColor.appendChild(logo)
