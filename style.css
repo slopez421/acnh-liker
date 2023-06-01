@@ -12,9 +12,10 @@
    background-color: #53747f; 
    position: relative;
    top: 100px;
-   width: 800px;
+   width: 810px;
    height: 700px;
    margin: 0 auto;
+   border-radius: 25px;
 }
 
 #nav {
@@ -28,6 +29,7 @@
     font-family: 'Lucida Sans';
     align-items: left;
     font-size: 15px;
+    border-radius: 25px;
     
 }
 
@@ -49,6 +51,7 @@
     overflow: auto;
     font-family: 'Lucida Sans';
     font-size: small;
+    border-radius: 25px;
 }
 
 #villagersContainerSearch
@@ -63,6 +66,7 @@
     overflow: auto;
     font-family: 'Lucida Sans';
     font-size: small;
+    border-radius: 25px;
 }
 
 #villagersContainerLikes
@@ -78,6 +82,7 @@
     overflow: auto;
     font-family: 'Lucida Sans';
     font-size: small;
+    border-radius: 25px;
 }
 
 .card {
