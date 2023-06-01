@@ -33,7 +33,7 @@
 
 #dreamTeam {
     margin-top: 30px;
-    background-color: #c8e0f1;
+    background-color: aliceblue;
 }
 
 
@@ -102,7 +102,7 @@
 }
 
 #home {
-    background-color: #c8e0f1;
+    background-color: aliceblue;
     margin-top: 20%;
 }
 
@@ -111,7 +111,7 @@
 }
 
 .logo {
-margin-top: -150px;
-width: 20%;
-height: 20%;
+margin-top: -95px;
+width: 15%;
+margin-left: -40px;
 }

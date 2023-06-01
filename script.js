@@ -40,7 +40,6 @@ function renderOneVillager(villager, container){
         heart.classList.toggle('activated-heart')
         let villagerClone = card.cloneNode(true)
         likesContainer.appendChild(villagerClone)
-
     })
 
     //add villager card to DOM
@@ -102,7 +101,11 @@ home.addEventListener('click', () => {
     likesContainer.style.display = "none";
 })
 
+// create logo and append to the dom
+function createLogo() {
 let logo = document.createElement('div')
 logo.innerHTML= `
 <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Animal_Crossing_Leaf.svg/512px-Animal_Crossing_Leaf.svg.png?20220815231826" />`
-bodyColor.appendChild(logo)
+bodyColor.appendChild(logo)}
+
+createLogo()
