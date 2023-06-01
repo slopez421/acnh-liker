@@ -106,6 +106,7 @@ function createLogo() {
 let logo = document.createElement('div')
 logo.innerHTML= `
 <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Animal_Crossing_Leaf.svg/512px-Animal_Crossing_Leaf.svg.png?20220815231826" />`
-bodyColor.appendChild(logo)}
+bodyColor.appendChild(logo)
+}
 
 createLogo()
