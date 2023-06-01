@@ -1,4 +1,4 @@
-//global consts
+//all global consts
 const form = document.querySelector('form')
 const villagerContainer = document.getElementById('villagersContainer')
 const villagerContainerSearch = document.getElementById('villagersContainerSearch')
@@ -47,8 +47,10 @@ function renderOneVillager(villager, container){
 }
 
 
-// come back to this and figure out how to search through the
-//villager list without needing id 
+//event listeners
+
+// submit event uses a for loop to searc through each villager
+//until the villager name matches the target search value
 form.addEventListener('submit', handleSubmit)
 
 function handleSubmit(e){
@@ -65,15 +67,15 @@ function handleSubmit(e){
     //render the villager information and append it
     .then(villagerList => {
         for (index in villagerList){
-            //console.log(index)
+            //index here represents the array items [0-300]
+            //allVillagerStats represents the stats for Villagers within each array item
             let allVillagerStats = villagerList[index]
             for (stats in allVillagerStats){
                 let indivStat = allVillagerStats[stats]
                 let villagerName = indivStat['name-USen']
-               // console.log(indivStat)
-                //console.log(villagerName)
-               //console.log(stats)
                 if(search === villagerName){
+                    //when the search matches the name, render that villager
+                    //into a separate container and display only that container
                     villagerContainer.style.display = "none";
                     likesContainer.style.display = "none";
                     villagerContainerSearch.style.display = "block";
@@ -86,15 +88,11 @@ function handleSubmit(e){
     })
 }
 
-team.addEventListener('click', handleClick)
-
-function handleClick(e) {
-
-console.log(e.target)
+team.addEventListener('click', () => {
 villagerContainer.style.display = "none";
 villagerContainerSearch.style.display = "none";
 likesContainer.style.display = "block";
-}
+})
 
 home.addEventListener('click', () => {
     villagerContainer.style.display = "block";
