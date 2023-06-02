@@ -101,6 +101,8 @@ home.addEventListener('click', () => {
     likesContainer.style.display = "none";
 })
 
+
+
 // create logo and append to the dom
 function createLogo() {
 let logo = document.createElement('div')
@@ -110,3 +112,12 @@ bodyColor.appendChild(logo)
 }
 
 createLogo()
+
+function createDarkMode() {
+    let mode = document.createElement('div');
+    mode.classList = 'mode';
+    mode.textContent = `Dark Mode`;
+    bodyColor.appendChild(mode)
+}
+
+createDarkMode()
