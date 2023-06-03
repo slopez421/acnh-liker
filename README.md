@@ -2,7 +2,7 @@
 
 <img src="/images/acnh_app.jpg" />
 
-#### The Dream Team Organizer helps you choose from over 300 villagers in Animal Crossing New Horizons and gives you one place to store all of your favorites.
+### The Dream Team Organizer helps you choose from over 300 villagers in Animal Crossing New Horizons and gives you one place to store all of your favorites.
 
 ### Browse through hundreds of villagers or search for a specific one by name. 
 
@@ -14,6 +14,6 @@
 
 <img src="/images/appDemo.gif" />
 
-### Credits
-##### [Leaf Logo](https://commons.wikimedia.org/wiki/File:Animal_Crossing_Leaf.svg)
-#### [ACNH API](https://acnhapi.com/)
+## Credits
+### [Leaf Logo](https://commons.wikimedia.org/wiki/File:Animal_Crossing_Leaf.svg)
+### [ACNH API](https://acnhapi.com/)
