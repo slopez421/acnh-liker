@@ -2,15 +2,13 @@
 
 <img src="/images/acnh_app.jpg" />
 
-#### The Dream Team Organizer helps you choose from over 300 villagers in the [ACNH API](https://acnhapi.com/v1a/villagers/) and gives you one place to store all of your favorites. 
+#### The Dream Team Organizer helps you choose from over 300 villagers in the [ACNH API](https://acnhapi.com/v1a/villagers/) and gives you one place to store all of your favorites.
 
-### Browse through hundreds of villagers or search for a specific one and use the like button to add it to your Dream Team. 
-
-<img src="/images/appDemo.gif" />
-
-### Hover over the Dark Mode icon to switch from light to dark. 
+### Browse through hundreds of villagers or search for a specific one by name. Clicking the like button on each villager will add it to your Dream Team. And if you're a night owl, mouse over the leaf icon to switch to Dark Mode.
 
 <img src="/images/darkMode.gif" />
+
+<img src="/images/appDemo.gif" />
 
 
 
