@@ -7,6 +7,9 @@ const villagerContainerSearch = document.getElementById('villagersContainerSearc
 const team = document.getElementById('dreamTeam')
 const likesContainer = document.getElementById('villagersContainerLikes')
 const home = document.getElementById('home')
+let logo = document.getElementsByClassName('logo')
+const body = document.querySelector('body')
+
 
 //fetch all villagers
 function getAllVillagers(){
@@ -102,7 +105,6 @@ home.addEventListener('click', () => {
 })
 
 
-
 // create logo and append to the dom
 function createLogo() {
 let logo = document.createElement('div')
@@ -114,10 +116,20 @@ bodyColor.appendChild(logo)
 createLogo()
 
 function createDarkMode() {
-    let mode = document.createElement('div');
-    mode.classList = 'mode';
-    mode.textContent = `Dark Mode`;
-    bodyColor.appendChild(mode)
+    let modeText = document.createElement('div');
+    modeText.classList = 'modeText';
+    modeText.textContent = `Dark Mode`;
+    bodyColor.appendChild(modeText)
+
+    modeText.addEventListener('mouseover', () => {
+        body.classList.toggle('darkMode')
+        villagerContainer.classList.toggle('darkMode')
+        villagerContainerSearch.classList.toggle('darkMode')
+        likesContainer.classList.toggle('darkMode')
+        form.classList.toggle('darkMode')
+        home.classList.toggle('darkMode')
+        team.classList.toggle('darkMode')
+    })
 }
 
 createDarkMode()

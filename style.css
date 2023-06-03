@@ -35,13 +35,11 @@
 
 #dreamTeam {
     margin-top: 30px;
-    background-color: aliceblue;
 }
 
 
 #villagersContainer
 {
-    background-color: aliceblue;
     width: 620px;
     height: 90%;
     position: absolute;
@@ -56,7 +54,6 @@
 
 #villagersContainerSearch
 {
-    background-color: aliceblue;
     width: 620px;
     height: 90%;
     position: absolute;
@@ -72,7 +69,6 @@
 #villagersContainerLikes
 
 {
-    background-color: aliceblue;
     width: 620px;
     height: 90%;
     position: absolute;
@@ -108,13 +104,11 @@
 }
 
 #home {
-    background-color: aliceblue;
     margin-top: 20%;
 }
 
 #form {
     margin-top: 10%;
-    background-color: aliceblue;
 }
 
 .logo {
@@ -123,6 +117,16 @@
     margin-left: 745px;
 }
 
-.mode {
+.modeText {
     margin-top: -80px;
     margin-left: 790px;
+}
+
+.lightMode {
+    background-color: aliceblue;
+}
+
+.darkMode {
+    background-color: black;
+    color:aliceblue;
+}
