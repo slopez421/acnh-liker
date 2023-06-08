@@ -1,5 +1,3 @@
-//all global consts
-
 const bodyColor = document.getElementById('bodyColor')
 const form = document.querySelector('form')
 const villagerContainer = document.getElementById('villagersContainer')
@@ -7,25 +5,20 @@ const villagerContainerSearch = document.getElementById('villagersContainerSearc
 const team = document.getElementById('dreamTeam')
 const likesContainer = document.getElementById('villagersContainerLikes')
 const home = document.getElementById('home')
-let logo = document.getElementsByClassName('logo')
+const logo = document.getElementsByClassName('logo')
 const body = document.querySelector('body')
 
-
-//fetch all villagers
 function getAllVillagers(){
     fetch("https://acnhapi.com/v1a/villagers", {
         method: "GET"
     })
     .then((res) => res.json()) 
-    //take the data promise and for Each item in the array
-    //render the villager information and append it
     .then(villagerData => villagerData.forEach(villager => renderOneVillager(villager, villagerContainer)))
 }
 
 getAllVillagers()
 
 function renderOneVillager(villager, container){
-    //build villager card
 
     let card = document.createElement('div')
     card.className = 'card'
@@ -45,45 +38,31 @@ function renderOneVillager(villager, container){
         likesContainer.appendChild(villagerClone)
     })
 
-    //add villager card to DOM
     container.appendChild(card)
     
 }
 
-
-//event listeners
-
-// submit event uses a for loop to search through each villager
-//until the villager name matches the target search value
 form.addEventListener('submit', handleSubmit)
 
 function handleSubmit(e){
-    //search will give us the exact value being put into the search bar on our form
+   
     const search = e.target.search.value
     e.preventDefault()
-    console.log(search)
 
     fetch(`https://acnhapi.com/v1a/villagers/`, {
         method: "GET"
     })
     .then((res) => res.json()) 
-    //take the data promise and for Each item in the array
-    //render the villager information and append it
     .then(villagerList => {
         for (index in villagerList){
-            //index here represents the array items [0-300]
-            //allVillagerStats represents the stats for Villagers within each array item
             let allVillagerStats = villagerList[index]
             for (stats in allVillagerStats){
                 let indivStat = allVillagerStats[stats]
                 let villagerName = indivStat['name-USen']
                 if(search === villagerName){
-                    //when the search matches the name, render that villager
-                    //into a separate container and display only that container
                     villagerContainer.style.display = "none";
                     likesContainer.style.display = "none";
                     villagerContainerSearch.style.display = "block";
-                    
                     renderOneVillager(allVillagerStats, villagerContainerSearch)
                 }
 
@@ -105,7 +84,6 @@ home.addEventListener('click', () => {
 })
 
 
-// create logo and append to the dom
 function createLogo() {
 let logo = document.createElement('div')
 logo.innerHTML= `
